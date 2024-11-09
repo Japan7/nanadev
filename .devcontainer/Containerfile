@@ -1,0 +1,12 @@
+FROM mcr.microsoft.com/devcontainers/base:debian
+
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt update && \
+    apt install -y --no-install-recommends build-essential clang ffmpeg && \
+    ln -s /usr/lib/x86_64-linux-gnu/libopus.so.0 /usr/lib/
+
+ENV UV_LINK_MODE=copy
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+COPY --from=edgedb/edgedb-cli:latest /usr/bin/edgedb /bin/
+COPY --from=ghcr.io/japan7/edgedb-dump:latest edgedb.dump /
