@@ -1,0 +1,52 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+  "name": "Debian",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  // "image": "mcr.microsoft.com/devcontainers/base:bullseye"
+  "dockerComposeFile": "compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Configure tool-specific properties.
+  "customizations": {
+    "codespaces": {
+      "repositories": {
+        "Japan7/nanapi": {
+          "permissions": {
+            "contents": "write"
+          }
+        },
+        "Japan7/nanachan": {
+          "permissions": {
+            "contents": "write"
+          }
+        }
+      }
+    },
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "magicstack.edgedb",
+        "tamasfe.even-better-toml"
+      ]
+    }
+  },
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+
+  "remoteEnv": {
+    "PATH": "${containerWorkspaceFolder}/bin:${containerEnv:PATH}"
+  },
+  "onCreateCommand": "on-create.sh",
+  "postCreateCommand": "post-create.sh",
+  "postStartCommand": "post-start.sh"
+}
