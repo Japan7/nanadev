@@ -7,7 +7,7 @@ services:
       - ..:/workspace:cached
 
   edgedb:
-    image: edgedb/edgedb:5
+    image: edgedb/edgedb:6
     environment:
       - EDGEDB_SERVER_SECURITY=insecure_dev_mode
       - EDGEDB_SERVER_ADMIN_UI=enabled
