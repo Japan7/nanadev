@@ -20,7 +20,7 @@ MEILISEARCH_HOST_URL = 'http://meilisearch:7700'
 
 For references:
 
-- Gel DSN: `gel://admin:password@gel:5656/main`
+- Gel DSN: `gel://admin:password@gel/main`
 - Gel Web UI: forwarded to http://localhost:5656/ui (credentials: `admin/password`)
 
 ### nanachan

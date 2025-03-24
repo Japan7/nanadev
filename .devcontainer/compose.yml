@@ -9,9 +9,10 @@ services:
   gel:
     image: geldata/gel:6
     environment:
+      - GEL_SERVER_USER=admin
+      - GEL_SERVER_PASSWORD=password
       - GEL_SERVER_SECURITY=insecure_dev_mode
       - GEL_SERVER_ADMIN_UI=enabled
-      - GEL_SERVER_PASSWORD=password
     ports:
       - "5656:5656" # for web ui
     restart: unless-stopped
