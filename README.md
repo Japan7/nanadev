@@ -20,8 +20,8 @@ MEILISEARCH_HOST_URL = 'http://meilisearch:7700'
 
 For references:
 
-- EdgeDB DSN: `edgedb://edgedb:edgedb@edgedb:5656/main`
-- EdgeDB Web UI: forwarded to http://localhost:5656/ui (credentials: `edgedb/edgedb`)
+- Gel DSN: `gel://admin:password@gel:5656/main`
+- Gel Web UI: forwarded to http://localhost:5656/ui (credentials: `admin/password`)
 
 ### nanachan
 

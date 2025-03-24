@@ -8,5 +8,5 @@ RUN apt update && \
 ENV UV_LINK_MODE=copy
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
-COPY --from=edgedb/edgedb-cli:latest /usr/bin/edgedb /bin/
-COPY --from=ghcr.io/japan7/edgedb-dump:latest edgedb.dump /
+COPY --from=geldata/gel-cli:latest /usr/bin/gel /bin/
+COPY --from=ghcr.io/japan7/gel-dump:latest gel.dump /
