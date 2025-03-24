@@ -4,7 +4,7 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Japan7/nanadev)
 
-1. Open this project in GitHub Codespaces (badge above) or in VS Code Dev Container
+1. Open this project in GitHub Codespaces (badge above) or in VS Code Dev Container (4-core machine is recommended)
 2. Wait for everything to be setup
 3. When prompted, open the workspace ([`workspace.code-workspace`](workspace.code-workspace))
 4. Setup the local settings for each project, following their respective `README.md` and the next section
