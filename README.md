@@ -41,5 +41,5 @@ NANAPI_CLIENT_USERNAME = 'botname'
 NANAPI_CLIENT_PASSWORD = 'verysecure'
 
 ## Redis
-REDIS_HOST = 'redis'
+REDIS_HOST = 'valkey'
 ```
