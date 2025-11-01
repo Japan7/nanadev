@@ -4,7 +4,7 @@ services:
       dockerfile: Containerfile
     command: sleep infinity
     volumes:
-      - ..:/workspace:cached
+      - ..:/nanadev:cached
 
   gel:
     image: geldata/gel:6

@@ -6,7 +6,7 @@
   // "image": "mcr.microsoft.com/devcontainers/base:bullseye"
   "dockerComposeFile": "compose.yml",
   "service": "devcontainer",
-  "workspaceFolder": "/workspace",
+  "workspaceFolder": "/nanadev",
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
