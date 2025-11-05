@@ -7,7 +7,7 @@ services:
       - ..:/nanadev:cached
 
   gel:
-    image: geldata/gel:6
+    image: geldata/gel:7
     environment:
       - GEL_SERVER_USER=admin
       - GEL_SERVER_PASSWORD=password
